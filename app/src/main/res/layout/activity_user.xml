@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firewatch"
+    tools:context=".UserActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="კომპანიის სახელი*"
+            android:inputType="textPersonName"
+            android:textColor="#E20B0B"
+            android:textColorHint="#EBAAAA" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ცხელი ხაზი*"
+            android:inputType="phone"
+            android:textColor="#E20B0B"
+            android:textColorHint="#EBAAAA" />
+
+        <EditText
+            android:id="@+id/inputHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="საქმიანობა*"
+            android:inputType="textPostalAddress"
+            android:textColor="#E20B0B"
+            android:textColorHint="#EBAAAA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ინფორმაცია"
+            android:textAlignment="center"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/showName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#E20B0B" />
+
+        <TextView
+            android:id="@+id/showPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#E20B0B" />
+
+        <TextView
+            android:id="@+id/showAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#E20B0B" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changePasswordBtn"
+        android:layout_width="337dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00611616"
+        android:text="პაროლის შეცვლა"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="334dp"
+        android:layout_height="43dp"
+        android:background="#F44336"
+        android:text="გამოსვლა"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/changePasswordBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00611616"
+        android:text="მონაცემების გასუფთავება"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/changePasswordBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="339dp"
+        android:layout_height="53dp"
+        android:background="#F44336"
+        android:text="დამახსოვრება"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/changePasswordBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintVertical_bias="0.075" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
